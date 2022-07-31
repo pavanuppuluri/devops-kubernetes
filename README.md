@@ -11,5 +11,11 @@ Kubernetes, also known as K8s, is an open-source system for automating deploymen
 
 ![Screenshot](k8s_2.png)
 
+## Kubernetes Worker Node (Minion)
+
+![Screenshot](k8s_3.png)
+
+## Kubernetes Cluster
+
 ![Screenshot](K8SArchitecture.png)
 
