@@ -104,5 +104,5 @@ kubectl create -f <directory>
 ### To print logs for a container in a pod
 
   ````
-  kubectl logs
+  kubectl logs <pod-name>
   ````
