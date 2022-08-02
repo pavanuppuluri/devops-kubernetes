@@ -18,6 +18,10 @@ Pods are the smallest units of deployment in Kubernetes
 
 ![Screenshot](img/pod_networking.png)
 
+## Intra-Pod Communication
+
+![Screenshot](img/intra-pod-communication.png)
+
 ## Inter-Pod Communication
 
 ![Screenshot](img/inter-pod-communication.png)
