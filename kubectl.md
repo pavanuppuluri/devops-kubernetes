@@ -85,6 +85,11 @@ kubectl create -f <directory>
   ````
   kubectl exec <pod-name> command
   ````
+
+* If pod contains more than one running container
+  ````
+  kubectl exec <pod-name> --container <container-name> command
+  ````
   
 * To open a shell when pod has more than one running container
   ````
