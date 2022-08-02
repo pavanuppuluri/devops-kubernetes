@@ -25,7 +25,7 @@ kubectl create -f <directory>
 ### To list one or more resources
 
 * To get all pods
-*
+
   ````
   kubectl get pods <pod-name>
   ````
