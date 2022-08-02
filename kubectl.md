@@ -103,6 +103,13 @@ kubectl create -f <directory>
   
 ### To print logs for a container in a pod
 
+* If pod contains only one running container
   ````
   kubectl logs <pod-name>
   ````
+* If pod contains more than one running container
+  ````
+  kubectl logs <pod-name> --container <container-name>  
+  ````
+  
+
