@@ -8,6 +8,7 @@
 
 
 ### To create a resource from a file
+
 ````
 kubectl create -f example.yaml
 ````
@@ -38,4 +39,11 @@ kubectl create -f <directory>
 * To list multiple resources
   ````
   kubectl get pods,deploy
+  ````
+
+### Display detailed state of one or more resources
+
+* General syntax
+  ````
+  kubectl describe [TYPE] [NAME]
   ````
