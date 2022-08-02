@@ -110,6 +110,12 @@ spec:
   restartPolicy: Never
 ````
 
+### Delete A ConfigMap
+
+````
+kubectl delete configmap <configmapname> -n namespacename
+````
+
 **Note**: A ConfigMap can only be referenced by pods residing in the same namespace
 
 
