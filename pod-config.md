@@ -1,6 +1,6 @@
 # Pod Config
 
-## Pod specification - Example
+## Pod mainfest - Example (pod-spec.yaml)
 
 ````
 apiVersion: v1
@@ -15,3 +15,9 @@ spec:
     ports:
     - containerPort: 80
 ````
+
+## Create a pod
+````
+kubectl create -f pod-spec.yaml
+````
+
