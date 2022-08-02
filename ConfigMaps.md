@@ -57,6 +57,32 @@ name: app-configmap
 restartPolicy: Never
 ````
 
+### Mounting ConfigMap In A Pod
+
+````
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configmap-example-pod
+spec:
+  containers:
+    - name: configmap-example-busybox
+      image: k8s.gcr.io/busybox
+      command: [ "/bin/sh", "-c", "ls /etc/config/" ]
+      volumeMounts:
+      - name: config-volume
+        mountPath: /etc/config
+
+  volumes:
+    - name: config-volume
+      configMap:
+        # Provide the name of the ConfigMap containing the files you want
+        # to add to the container
+        name: special-config
+  restartPolicy: Never
+````
+
+**Note**: A ConfigMap can only be referenced by pods residing in the same namespace
 
 
 
