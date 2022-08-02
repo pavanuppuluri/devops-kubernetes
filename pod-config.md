@@ -21,3 +21,7 @@ spec:
 kubectl create -f pod-spec.yaml
 ````
 
+## Expose a pod using NodePort service
+````
+kubectl expose pod <pod-name> --type=NodePort --port=80
+````
