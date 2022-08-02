@@ -11,3 +11,14 @@
 ````
 kubectl create -f example.yaml
 ````
+````
+kubectl create -f pod-example.yaml
+````
+````
+kubectl create -f deployment-example.yaml
+````
+````
+kubectl create -f <directory>
+````
+
+
