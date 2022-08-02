@@ -79,4 +79,16 @@ kubectl create -f <directory>
   kubectl delete pods --all
   ````
   
+### To interact and execute inside a running container
+
+* If pod contains only one running container
+  ````
+  kubectl exec <pod-name> command
+  ````
+  
+* To open a shell when pod has more than one running container
+  ````
+  kubectl exec -it <pod-name> --container <container-name> -- /bin/bash
+  ````
+  
 
