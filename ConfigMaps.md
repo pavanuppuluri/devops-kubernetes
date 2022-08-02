@@ -23,6 +23,39 @@ kubectl create configmap <map-name> <datasource>
 datasource can be directory/file/literal  --from-file / --from-literal
 ````
 
+### Creating & Using ConfigMap In A Pod
+
+**app.properties**
+
+````
+system.type="TESTING CONFIGMAP"
+system.number=12345
+````
+
+**Create ConfigMap**
+
+````
+kubectl create configmap app-configmap --from-file=configmap-example/app-basic.properties
+````
+
+**Create Pod & Use ConfigMap**
+
+````
+apiVersion: v1
+kind: Pod
+metadata:
+name: configmap-example-pod
+spec:
+containers:
+- name: configmap-example-busybox
+image: k8s.gcr.io/busybox
+command: [ "/bin/sh", "-c", "env" ]
+envFrom:
+# Load the Complete ConfigMap
+- configMapRef:
+name: app-configmap
+restartPolicy: Never
+````
 
 
 
