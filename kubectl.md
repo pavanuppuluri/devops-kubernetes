@@ -22,14 +22,20 @@ kubectl create -f <directory>
 ````
 
 ### To list one or more resources
-````
-kubectl get pods <pod-name>
-````
-#### To check pod along with the node it is running on
-````
-kubectl get pods <pod-name> -o wide
-````
-#### To list multiple resources
-````
-kubectl get pods,deploy
-````
+
+* To get all pods
+  ````
+  kubectl get pods <pod-name>
+  ````
+* To get a specific pod
+  ````
+  kubectl get pod <pod-name>
+  ````
+* To check pod along with the node it is running on
+  ````
+  kubectl get pods <pod-name> -o wide
+  ````
+* To list multiple resources
+  ````
+  kubectl get pods,deploy
+  ````
