@@ -74,3 +74,9 @@ kubectl create -f <directory>
   kubectl delete pods,services -l name=<label-name>
   ````
 
+* To delete all pods
+  ````
+  kubectl delete pods --all
+  ````
+  
+
