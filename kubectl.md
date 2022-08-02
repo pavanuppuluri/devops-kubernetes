@@ -93,6 +93,11 @@ kubectl create -f <directory>
   
 * To open a shell when pod has more than one running container
   ````
+  kubectl exec -it <pod-name> -- /bin/bash
+  ````
+  
+* To open a shell when pod has more than one running container
+  ````
   kubectl exec -it <pod-name> --container <container-name> -- /bin/bash
   ````
   
