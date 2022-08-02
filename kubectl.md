@@ -47,3 +47,14 @@ kubectl create -f <directory>
   ````
   kubectl describe [TYPE] [NAME]
   ````
+  
+* To get details of a pod
+  ````
+  kubectl describe pod <pod_name>
+  ````
+  
+* To get details of a node
+  ````
+  kubectl describe node <node_name>
+  ````
+
