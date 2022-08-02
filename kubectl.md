@@ -5,3 +5,9 @@
 ## Basic commands
 
 ![Screenshot](img/kubectl.png)
+
+
+### To create a resource from a file
+````
+kubectl create -f example.yaml
+````
