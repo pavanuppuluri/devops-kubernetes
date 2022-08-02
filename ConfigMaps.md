@@ -15,7 +15,13 @@
   * Environment variables
 
 
+### Creating ConfigMap
 
+````
+kubectl create configmap <map-name> <datasource>
+
+datasource can be file-name / literal value
+````
 
 
 
