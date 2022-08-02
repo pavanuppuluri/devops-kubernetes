@@ -36,6 +36,7 @@ kubectl create configmap special-config --from-literal=special.how=very --from-l
 ````
 system.type="TESTING CONFIGMAP"
 system.number=12345
+special.level.key=Hi!
 ````
 
 **Create ConfigMap**
@@ -61,6 +62,27 @@ envFrom:
 - configMapRef:
 name: app-configmap
 restartPolicy: Never
+````
+
+#### Loading only a specific key
+
+````
+apiVersion: v1
+kind: Pod
+metadata:
+name: configmap-example-pod
+spec:
+containers:
+- name: configmap-example-busybox
+image: k8s.gcr.io/busybox
+command: [ "/bin/sh", "-c", "env" ]
+env:
+  - name: SPECIAL_LEVEL_KEY
+    valueFrom: 
+      configMapRef:
+        name: app-configmap
+        key: special.level.key
+restart
 ````
 
 ### Mounting ConfigMap In A Pod
