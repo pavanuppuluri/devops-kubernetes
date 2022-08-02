@@ -20,7 +20,7 @@
 ````
 kubectl create configmap <map-name> <datasource>
 
-datasource can be file-name / literal value
+datasource can be file-name / literal value  --from-file / --from-literal
 ````
 
 
