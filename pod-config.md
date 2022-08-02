@@ -1,6 +1,6 @@
 # Pod Config
 
-## Pod mainfest - Example (pod-spec.yaml)
+### Pod mainfest - Example (pod-spec.yaml)
 
 ````
 apiVersion: v1
@@ -16,12 +16,12 @@ spec:
     - containerPort: 80
 ````
 
-## Create a pod
+### Create a pod
 ````
 kubectl create -f pod-spec.yaml
 ````
 
-## Expose a pod using NodePort service
+### Expose a pod using NodePort service
 ````
 kubectl expose pod <pod-name> --type=NodePort --port=80
 ````
