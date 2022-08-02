@@ -1,3 +1,3 @@
 # Pods
 
-Pods are the smallest deployable units of computing in Kubernetes.
+Pods are the smallest units of deployment in Kubernetes.
