@@ -23,6 +23,12 @@ kubectl create configmap <map-name> <datasource>
 datasource can be directory/file/literal  --from-file / --from-literal
 ````
 
+### Example
+
+````
+kubectl create configmap special-config --from-literal=special.how=very --from-literal=special.type=charm
+````
+
 ### Creating & Using ConfigMap In A Pod
 
 **app.properties**
