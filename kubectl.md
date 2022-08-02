@@ -71,6 +71,6 @@ kubectl create -f <directory>
 
 * To delete multiple resources
   ````
-  kubectl delete podsservices -l name=<label-name>
+  kubectl delete pods,services -l name=<label-name>
   ````
 
