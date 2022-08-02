@@ -8,4 +8,5 @@ Kubernetes, also known as K8s, is an open-source system for automating deploymen
 * [kubeadm](https://github.com/pavanuppuluri/devops-kubernetes/blob/master/kubeadm.md)
 * [kubectl](https://github.com/pavanuppuluri/devops-kubernetes/blob/master/kubectl.md)
 * [Pods](https://github.com/pavanuppuluri/devops-kubernetes/blob/master/pods.md)
+* [Pod Config](https://github.com/pavanuppuluri/devops-kubernetes/blob/master/pod-config.md)
 
