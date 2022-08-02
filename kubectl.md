@@ -101,4 +101,8 @@ kubectl create -f <directory>
   kubectl exec -it <pod-name> --container <container-name> -- /bin/bash
   ````
   
+### To print logs for a container in a pod
 
+  ````
+  kubectl logs
+  ````
