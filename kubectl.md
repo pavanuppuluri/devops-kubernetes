@@ -45,7 +45,7 @@ kubectl create -f <directory>
   kubectl get pods,deploy
   ````
 
-### Display detailed state of one or more resources
+### To display detailed state of one or more resources
 
 * General syntax
   ````
@@ -60,5 +60,17 @@ kubectl create -f <directory>
 * To get details of a node
   ````
   kubectl describe node <node_name>
+  ````
+  
+### To delete resources
+
+* To delete a pod
+  ````
+  kubectl delete -f pod.yaml
+  ````
+
+* To delete multiple resources
+  ````
+  kubectl delete podsservices -l name=<label-name>
   ````
 
