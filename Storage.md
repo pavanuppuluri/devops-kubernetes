@@ -14,6 +14,9 @@
 * Kubernetes supports multiple volume types
 
 #### Volume Types
+
+* Kubernetes supports different volume types
+
 <table>
   <tr><td><b>Ephemeral</b></td><td>Same lifetime as pods</td></tr>
   <tr><td><b>Durable</b></td><td>Beyond pods lifetime</td></tr>
