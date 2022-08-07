@@ -30,4 +30,5 @@
 <tr><td>emptyDir</td><td>local</td><td>secret</td></tr>
 <tr><td>vsphereVolume</td><td>storageos</td><td>   </td></tr>
 <table>  
-  
+
+![Screenshot](img/empty-dir-host-path.png)
