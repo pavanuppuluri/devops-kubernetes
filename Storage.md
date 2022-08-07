@@ -80,6 +80,29 @@ spec:
   * Volume (directory on Node) - test-vol
   
 ![Screenshot](img/gce-persistent-disk.png)
+  
+**gcePersistentDisk Spec - Example**
+  
+````
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: k8s.gcr.io/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /test-pd
+      name: test-volume
+  volumes:
+  - name: test-volume
+    # This GCE PD must already exist.
+    gcePersistentDisk:
+      pdName: my-data-disk
+      fsType: ext4
+````
+  
 
   
 
