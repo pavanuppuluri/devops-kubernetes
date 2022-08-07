@@ -79,7 +79,7 @@ spec:
   * Mount (inside Pod) - test-mnt
   * Volume (directory on Node) - test-vol
   
-
+![Screenshot](img/gce-persistent-disk.png)
 
   
 
