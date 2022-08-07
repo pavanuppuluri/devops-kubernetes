@@ -19,3 +19,4 @@
   <tr><td><b>Durable</b></td><td>Beyond pods lifetime</td></tr>
 </table>
 
+![Screenshot](img/volume-types.png)
