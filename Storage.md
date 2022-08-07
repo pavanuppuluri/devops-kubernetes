@@ -8,3 +8,5 @@
 
 ### Volumes bring persistence to Pod
 
+#### Advantages of Kubernetes Volumes vs. Docker Volumes
+
