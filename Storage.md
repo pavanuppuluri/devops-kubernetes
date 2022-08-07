@@ -35,3 +35,9 @@
 <table>  
 
 ![Screenshot](img/empty-dir-host-path.png)
+  
+**emptyDir Example Spec**
+
+![Screenshot](img/empty-dir-spec.png)
+  
+
