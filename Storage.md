@@ -13,3 +13,9 @@
 * When containers in Docker restarts, Data inside the Volume will be erased where as in Pod data is preserved across container restarts
 * Kubernetes supports multiple volume types
 
+#### Volume Types
+<table>
+  <tr><td><b>Ephemeral</b></td><td>Same lifetime as pods</td></tr>
+  <tr><td><b>Durable</b></td><td>Beyond pods lifetime</td></tr>
+</table>
+
