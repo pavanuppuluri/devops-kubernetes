@@ -67,13 +67,18 @@ spec:
   - image: k8s.gcr.io/test-webserver
     name: test-container
     volumeMounts:
-    - mountPath: /cache
+    - mountPath: /test-mnt
       name: cache-volume
   volumes:
   - name: cache-volume
     hostPath: 
-      path: /cache
+      path: /test-vol
 ````
+
+* In above spec 
+  * Mount (inside Pod) - test-mnt
+  * Volume (directory on Node) - test-vol
+  
 
 
   
