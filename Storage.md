@@ -20,3 +20,4 @@
 </table>
 
 ![Screenshot](img/volume-types.png)
+
