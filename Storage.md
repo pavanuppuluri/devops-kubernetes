@@ -19,5 +19,15 @@
   <tr><td><b>Durable</b></td><td>Beyond pods lifetime</td></tr>
 </table>
 
-![Screenshot](img/volume-types.png)
-
+<table>
+<tr><td>awsElasticBlockStore</td><td>fc (fibre channel)</td><td>nfs</td></tr>
+<tr><td>azureDisk</td><td>flocker</td><td>persistentVolumeClaim</td></tr>
+<tr><td>azureFile</td><td>gcePersistentDisk</td><td>projected</td></tr>
+<tr><td>cephfs</td><td>gitRepo</td><td>portworxVolume</td></tr>
+<tr><td>configMap</td><td>glusterfs</td><td>quobyte</td></tr>
+<tr><td>csi</td><td>hostPath</td><td>rbd</td></tr>
+<tr><td>downwardAPI</td><td>iscsi</td><td>scaleIO</td></tr>
+<tr><td>emptyDir</td><td>local</td><td>secret</td></tr>
+<tr><td>vsphereVolume</td><td>storageos</td><td>   </td></tr>
+<table>  
+  
