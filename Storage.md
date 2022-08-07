@@ -37,7 +37,24 @@
 ![Screenshot](img/empty-dir-host-path.png)
   
 **emptyDir Example Spec**
+  
+````
+apiVersion: v1
+kind: Pod
+metadata:
+  name: test-pd
+spec:
+  containers:
+  - image: k8s.gcr.io/test-webserver
+    name: test-container
+    volumeMounts:
+    - mountPath: /cache
+      name: cache-volume
+  volumes:
+  - name: cache-volume
+    emptyDir: {}
+````
 
-![Screenshot](img/empty-dir-spec.png)
+
   
 
